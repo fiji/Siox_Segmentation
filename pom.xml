@@ -30,6 +30,11 @@
 		</dependency>
 	</dependencies>
 
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://jenkins.imagej.net/job/Siox_Segmentation/</url>
+	</ciManagement>
+
 	<scm>
 		<connection>scm:git:git://github.com/fiji/Siox_Segmentation</connection>
 		<developerConnection>scm:git:git@github.com:fiji/Siox_Segmentation</developerConnection>
