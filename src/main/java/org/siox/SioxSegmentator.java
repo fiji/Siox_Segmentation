@@ -518,10 +518,13 @@ public class SioxSegmentator
 		Utils.smoothcm(cm, imgWidth, imgHeight, 0.33f, 0.33f, 0.33f); // average
 		Utils.normalizeMatrix(cm);
 		Utils.erode(cm, imgWidth, imgHeight);
+		
 		if( predefinedFgPixels.isEmpty() == false )
 			keepOnlyLargeComponents( cm, UNKNOWN_REGION_CONFIDENCE, sizeFactorToKeep, predefinedFgPixels );
-		else 
-			keepOnlyLargestComponent( cm, UNKNOWN_REGION_CONFIDENCE );
+		else
+			keepOnlyLargeComponents( cm, UNKNOWN_REGION_CONFIDENCE, sizeFactorToKeep );
+			
+
 		for (int i=0; i<smoothness; i++) 
 		{
 			Utils.smoothcm(cm, imgWidth, imgHeight, 0.33f, 0.33f, 0.33f); // average
@@ -544,7 +547,7 @@ public class SioxSegmentator
 		if( predefinedFgPixels.isEmpty() == false )
 			keepOnlyLargeComponents( cm, UNKNOWN_REGION_CONFIDENCE, sizeFactorToKeep, predefinedFgPixels );
 		else
-			keepOnlyLargestComponent( cm, UNKNOWN_REGION_CONFIDENCE );
+			keepOnlyLargeComponents( cm, UNKNOWN_REGION_CONFIDENCE, sizeFactorToKeep );
 		fillColorRegions(cm, image);
 		Utils.dilate(cm, imgWidth, imgHeight);
 
@@ -909,64 +912,7 @@ public class SioxSegmentator
 				}
 		}
 	}	
-	
-	/**
-	 * Clears given confidence matrix except entries for largest component.
-	 *
-	 * @param cm  Confidence matrix to be analyzed
-	 * @param threshold Pixel visibility threshold.
-	 *        Exactly those cm entries larger than threshold are considered
-	 *        to be a "visible" foreground pixel.
-	 * @author Ignacio Arganda-Carreras (iargandacarreras at gmail dot com)
-	 */
-	protected void keepOnlyLargestComponent(
-			final float[] cm, 
-			final float threshold )
-	{
-		Arrays.fill(labelField, -1);
-		int curlabel = 0;
-		int maxregion = 0;
-		int maxblob = 0;
-
-		// slow but easy to understand:
-		final IntArrayList labelSizes = new IntArrayList();
 		
-		final IntArrayList predefinedLabels = new IntArrayList();
-		
-		for (int i=0; i<cm.length; i++) 
-		{
-			regionCount=0;
-			if (labelField[i] == -1 && cm[i] >= threshold) {
-				regionCount = depthFirstSearch(cm, i, threshold, curlabel++);
-				labelSizes.add(regionCount);				
-			}						
-
-			if (regionCount > maxregion) {
-				maxregion=regionCount;
-				maxblob=curlabel-1;
-			}
-		}
-
-		// Keep only region of maximum size
-		for ( int i=0; i<cm.length; i++ ) 
-			if ( labelField[i] != -1 ) 
-			{
-				// remove if the component is to small
-				if (labelSizes.get(labelField[i]) < maxregion 
-						&& !predefinedLabels.contains(labelField[i]) ) 
-				{
-					cm[i]=CERTAIN_BACKGROUND_CONFIDENCE;
-				}
-				// add maxblob always to foreground
-				else if (labelField[i] == maxblob) {
-					cm[i]=CERTAIN_FOREGROUND_CONFIDENCE;
-				}
-			}
-
-	}	
-
-	
-	
 	/**
 	 * Depth first search pixels in a foreground component.
 	 *
