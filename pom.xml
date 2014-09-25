@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>sc.fiji</groupId>
 		<artifactId>pom-fiji</artifactId>
-		<version>2.0.0-beta-0</version>
+		<version>2.0.0-beta-1-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>Siox_Segmentation</artifactId>
@@ -17,15 +17,26 @@
 	<name>plugins/Siox_Segmentation.jar</name>
 	<description></description>
 
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
+		<!-- Fiji dependencies -->	
 		<dependency>
 			<groupId>sc.fiji</groupId>
 			<artifactId>fiji-lib</artifactId>
 		</dependency>
+		
+		<!-- ImageJ dependencies -->
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>ij</artifactId>
 		</dependency>
+		
 	</dependencies>
 
 	<ciManagement>
@@ -38,14 +49,6 @@
 		<developerConnection>scm:git:git@github.com:fiji/Siox_Segmentation</developerConnection>
 		<tag>HEAD</tag>
 		<url>https://github.com/fiji/Siox_Segmentation</url>
-	</scm>
-
-	<repositories>
-		<!-- NB: for project parent, in case of partial checkout -->
-		<repository>
-			<id>imagej.public</id>
-			<url>http://maven.imagej.net/content/groups/public</url>
-		</repository>
-	</repositories>
+	</scm>	
 
 </project>
