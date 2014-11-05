@@ -15,7 +15,7 @@
  */
 package org.siox;
 
-import java.util.*;
+import java.util.ArrayList;
 
 /**
  * Representation of a color signature.

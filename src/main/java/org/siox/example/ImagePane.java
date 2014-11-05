@@ -16,16 +16,29 @@
 
 package org.siox.example;
 
-import java.io.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.geom.*;
-import java.awt.image.*;
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Shape;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.Area;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.GeneralPath;
+import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
+import java.awt.geom.RectangularShape;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
-import javax.swing.*;
-import javax.imageio.ImageIO;
 
-import org.siox.util.*;
+import javax.imageio.ImageIO;
+import javax.swing.Icon;
+import javax.swing.JComponent;
+
+import org.siox.util.Utils;
 
 /**
  * GUI Component to display a BufferedImage with a zoom factor

@@ -1,12 +1,5 @@
 package siox;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.util.Arrays;
-
-import org.siox.SioxSegmentator;
-
 import fiji.util.gui.GenericDialogPlus;
 import ij.IJ;
 import ij.ImagePlus;
@@ -16,6 +9,13 @@ import ij.plugin.PlugIn;
 import ij.process.ByteProcessor;
 import ij.process.ColorProcessor;
 import ij.process.FloatProcessor;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.Arrays;
+
+import org.siox.SioxSegmentator;
 
 public class Load_Segmentation implements PlugIn
 {

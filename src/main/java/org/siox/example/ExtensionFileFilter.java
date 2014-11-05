@@ -16,7 +16,9 @@
 package org.siox.example;
 
 import java.io.File;
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+
 import javax.swing.filechooser.FileFilter;
 
 /**

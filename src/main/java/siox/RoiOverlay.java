@@ -19,6 +19,7 @@
 
 package siox;
 
+import fiji.util.gui.OverlayedImageCanvas.Overlay;
 import ij.gui.Roi;
 import ij.gui.ShapeRoi;
 import ij.gui.ShapeRoiHelper;
@@ -31,8 +32,6 @@ import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.Shape;
 import java.awt.geom.AffineTransform;
-
-import fiji.util.gui.OverlayedImageCanvas.Overlay;
 
 /**
  * This class implements an overlay based on the image ROI.

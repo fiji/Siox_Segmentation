@@ -18,9 +18,11 @@ package org.siox;
 
 import java.awt.Rectangle;
 import java.awt.geom.Area;
-import java.util.*;
+import java.util.Arrays;
 
-import org.siox.util.*;
+import org.siox.util.IntArrayList;
+import org.siox.util.IntHashMap;
+import org.siox.util.Utils;
 
 /**
  * Image segmentator based on

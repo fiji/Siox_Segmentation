@@ -15,14 +15,19 @@
  */
 package org.siox.example;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.geom.*;
-import java.awt.image.*;
+import java.awt.Dimension;
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import java.awt.geom.Area;
+import java.awt.image.BufferedImage;
 import java.util.Arrays;
-import javax.swing.*;
 
-import org.siox.*;
+import javax.swing.JScrollPane;
+import javax.swing.SwingConstants;
+
+import org.siox.SioxSegmentator;
 
 /**
  * Image display with zooming and scrolling capabilities.

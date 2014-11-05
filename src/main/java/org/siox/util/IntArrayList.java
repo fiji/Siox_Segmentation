@@ -16,10 +16,10 @@
 package org.siox.util;
 
 import java.util.Collection;
-import java.util.Iterator;
-import java.util.ListIterator;
 import java.util.ConcurrentModificationException;
 import java.util.EmptyStackException;
+import java.util.Iterator;
+import java.util.ListIterator;
 import java.util.NoSuchElementException;
 
 /**

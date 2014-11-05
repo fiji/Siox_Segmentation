@@ -15,9 +15,19 @@
  */
 package org.siox.example;
 
-import java.awt.*;
-import java.awt.geom.*;
-import java.awt.image.*;
+import java.awt.Color;
+import java.awt.Cursor;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Point;
+import java.awt.RenderingHints;
+import java.awt.Toolkit;
+import java.awt.geom.Area;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.GeneralPath;
+import java.awt.geom.Rectangle2D;
+import java.awt.image.BufferedImage;
 
 /**
  * Some static cursor creation utilities.

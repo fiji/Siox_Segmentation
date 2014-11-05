@@ -15,8 +15,18 @@
  */
 package org.siox.example;
 
-import java.awt.*;
-import javax.swing.*;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.Rectangle;
+import java.awt.Toolkit;
+
+import javax.swing.Icon;
+import javax.swing.JComponent;
+import javax.swing.SwingConstants;
+import javax.swing.UIManager;
 
 /**
  * Ruler component for <CODE>ScrollDisplay</CODE>.
