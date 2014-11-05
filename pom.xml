@@ -9,6 +9,7 @@
 		<groupId>sc.fiji</groupId>
 		<artifactId>pom-fiji</artifactId>
 		<version>5.0.1</version>
+		<relativePath />
 	</parent>
 
 	<artifactId>Siox_Segmentation</artifactId>
