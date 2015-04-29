@@ -1,4 +1,4 @@
-![](http://jenkins.imagej.net/job/Siox_Segmentation/lastBuild/badge/icon)
+[![](http://jenkins.imagej.net/job/Siox_Segmentation/lastBuild/badge/icon)](http://jenkins.imagej.net/job/Siox_Segmentation/)
 
 Siox_Segmentation
 =================
