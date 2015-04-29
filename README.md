@@ -1,3 +1,5 @@
+![](http://jenkins.imagej.net/job/Siox_Segmentation/lastBuild/badge/icon)
+
 Siox_Segmentation
 =================
 
