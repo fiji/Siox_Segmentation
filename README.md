@@ -1,4 +1,4 @@
-[![](http://jenkins.imagej.net/job/Siox_Segmentation/lastBuild/badge/icon)](http://jenkins.imagej.net/job/Siox_Segmentation/)
+[![](https://travis-ci.org/fiji/Siox_Segmentation.svg?branch=master)](https://travis-ci.org/fiji/Siox_Segmentation)
 
 Siox_Segmentation
 =================
