@@ -332,7 +332,7 @@ public class IntArrayList {
    *
    * @return the removed value.
    * @exception IndexOutOfBoundsException if index out of range <CODE>(index
-   *		  &lt; 0 || index &ge; size())</CODE.
+   *		  &lt; 0 || index &ge; size())</CODE>.
    */
   public int remove(int index) {
 	if (index<0 || index>=size)
@@ -350,7 +350,8 @@ public class IntArrayList {
    * Removes from this List all of the elements whose index is between
    * fromIndex, inclusive and toIndex, exclusive.
    * <P>
-   *  A call with <CODE>toIndex &leq; toIndex</CODE> has no effect.
+   * A call with {@code toIndex <= fromIndex} has no effect.
+	 * </P>
    *
    * @exception IndexOutOfBoundsException if an index out of range.
    */

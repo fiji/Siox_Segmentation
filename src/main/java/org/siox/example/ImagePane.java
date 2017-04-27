@@ -282,7 +282,7 @@ public class ImagePane extends JComponent
 	}
 
 	 /**
-	 * Returns the area of selection or <CODE>null<CODE> for no current selection.
+	 * Returns the area of selection or <CODE>null</CODE> for no current selection.
 	 */
 	public Area getSelectionArea()
 	{

@@ -780,7 +780,7 @@ public class SioxSegmentator
 	/**
 	 * Clears given confidence matrix except entries for the largest connected
 	 * component and every component with
-	 * <CODE>size*sizeFactorToKeep >= sizeOfLargestComponent</CODE>.
+	 * {@code size*sizeFactorToKeep >= sizeOfLargestComponent}.
 	 *
 	 * @param cm  Confidence matrix to be analyzed
 	 * @param threshold Pixel visibility threshold.
@@ -833,7 +833,7 @@ public class SioxSegmentator
 	/**
 	 * Clears given confidence matrix except entries for the user-defined connected
 	 * component and every component with
-	 * <CODE>size*sizeFactorToKeep >= sizeOfLargestComponent</CODE>.
+	 * {@code size*sizeFactorToKeep >= sizeOfLargestComponent}.
 	 *
 	 * @param cm  Confidence matrix to be analyzed
 	 * @param threshold Pixel visibility threshold.
