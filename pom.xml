@@ -11,7 +11,7 @@
 
 	<groupId>sc.fiji</groupId>
 	<artifactId>Siox_Segmentation</artifactId>
-	<version>1.0.5-SNAPSHOT</version>
+	<version>1.0.5</version>
 
 	<name>Siox Segmentation</name>
 	<description>Siox Segmentation plugin for Fiji.</description>
@@ -83,7 +83,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/fiji/Siox_Segmentation</connection>
 		<developerConnection>scm:git:git@github.com:fiji/Siox_Segmentation</developerConnection>
-		<tag>HEAD</tag>
+		<tag>Siox_Segmentation-1.0.5</tag>
 		<url>https://github.com/fiji/Siox_Segmentation</url>
 	</scm>
 	<issueManagement>
