@@ -1,4 +1,4 @@
-[![](https://travis-ci.org/fiji/Siox_Segmentation.svg?branch=master)](https://travis-ci.org/fiji/Siox_Segmentation)
+[![](https://github.com/fiji/Siox_Segmentation/actions/workflows/build-main.yml/badge.svg)](https://github.com/fiji/Siox_Segmentation/actions/workflows/build-main.yml)
 
 Siox_Segmentation
 =================
