@@ -81,7 +81,7 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/fiji/Siox_Segmentation</connection>
+		<connection>scm:git:https://github.com/fiji/Siox_Segmentation</connection>
 		<developerConnection>scm:git:git@github.com:fiji/Siox_Segmentation</developerConnection>
 		<tag>HEAD</tag>
 		<url>https://github.com/fiji/Siox_Segmentation</url>
